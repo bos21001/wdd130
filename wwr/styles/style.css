@@ -264,6 +264,12 @@ main section img {
 
 /* BEGIN - Styles for rivers.html */
 
+nav .activated {
+    background-color: var(--accent1-color);
+    color: var(--accent2-color);
+    cursor: default;
+}
+
 #background-rivers {
     display: grid;
     height: 130px;
