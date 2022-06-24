@@ -210,3 +210,7 @@ nav a:hover {
   grid-template-columns: auto auto auto;
   gap: 4px;
 }
+
+.wireframe_img {
+  max-width: 320px;
+}
