@@ -10,66 +10,71 @@
 
     </head>
 
-    <body>
-        <header>
+    <body id="contact_us">
+        <header id="contact_us_header">
             <nav>
-                <a href="#">Home</a>
+                <a href="index.html">Home</a>
                 <a href="gallery.html">Gallery</a>
-                <a href="contactus.html">Contact Us</a>
+                <a href="#">Contact Us</a>
             </nav>
             <hr>
         </header>
 
-        <div id="img_background"> <!-- Image will be added in css -->
-            <p>// For inquiries use this form, email me at pst@now.com.br, or
+        <div id="introduction_contact_us">
+            <p id="inquiries">// For inquiries use this form, email me at
+                pst@now.com.br, or
                 send a direct message in my instagram. If it's
                 regarding an elopement, tell me a bit about the day you are
                 planning. Can't wait to hear from you!</p>
             <div id="stay_connected">
                 <p>Stay connected</p>
                 <h2>FOLLOW ME HERE</h2>
-                <img src="img/logo/instagram_logo.png" alt="Instagram logo">
+                <a href="https://www.instagram.com/_nowphoto/">
+                    <img src="img/logo/instagram_logo.png" alt="Instagram logo">
+                </a>
             </div>
-            <p>↓ To contact</p>
+            <a href="#contact_us_main" id="to_contact">↓ To contact</a>
         </div>
 
-        <main>
-            <form action="post">
-                <label for="name">Name</label>
-                <input type="text" id="name" name="name" required>
-
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" required>
-
-                <label for="survey">How did you hear about me?</label>
-                <select name="survey" id="survey">
-                    <option value="">-- Select one option --</option>
-                    <option value="google">Google</option>
-                    <option value="instagram">Instagram</option>
-                    <option value="friend">A friend</option>
-                    <option value="pamphlet">Pamphlet</option>
-                    <option value="somewhere">Somewhere Else</option>
-                </select>
-
-                <label for="subject" required>Type of session</label>
-                <select name="subject" id="subject">
-                    <option value="">-- Select one option --</option>
-                    <option value="wedding">Wedding</option>
-                    <option value="newborn">Newborn</option>
-                    <option value="other">Other</option>
-                </select>
-
-                <label for="subject">Tell me more about your plans, date and so
-                    on</label>
-                <textarea name="message" id="message" cols="80" rows="5"
-                    required></textarea>
-
-
-                <input type="submit" value="Send email">
+        <main id="contact_us_main">
+            <h3>Contact Form</h3>
+            <form action="post" id="contact_us_form">
+                
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                
+                    <label for="survey">How did you hear about me?</label>
+                    <select name="survey" id="survey">
+                        <option value="">-- Select one option --</option>
+                        <option value="google">Google</option>
+                        <option value="instagram">Instagram</option>
+                        <option value="friend">A friend</option>
+                        <option value="pamphlet">Pamphlet</option>
+                        <option value="somewhere">Somewhere Else</option>
+                    </select>
+                
+                    <label for="subject">Type of session</label>
+                    <select name="subject" id="subject">
+                        <option value="">-- Select one option --</option>
+                        <option value="wedding">Wedding</option>
+                        <option value="newborn">Newborn</option>
+                        <option value="other">Other</option>
+                    </select>
+                
+                    <label for="subject">Tell me more about your plans, date and
+                        so
+                        on</label>
+                    <textarea name="message" id="message" cols="80" rows="5"
+                        required></textarea>
+                
+                    <input type="submit" value="Send email" id="submit">
             </form>
         </main>
 
-        <footer>
+        <footer id="contact_us_footer">
             <p>© 2022 NOW PHOTOS</p>
             <a href="site-plan.html" id="to_site_plan">Site Plan</a>
             <a href="https://www.instagram.com/_nowphoto/" target="_blank"
